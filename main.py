@@ -10,13 +10,11 @@ from repo.employee_repo import EmployeeRepo
 
 description = "Just for learning CURD oprations using SQL Server and Python"
 app = FastAPI(title="Employee Management", description = description)
-
 app.include_router(emp.employeeApi)
 
-favicon_path = "favicon.ico"
 @app.get('/favicon.ico', include_in_schema=False)
 async def favicon():
-    return FileResponse(favicon_path)
+    return FileResponse("favicon.ico")
 
 @app.get("/", response_class=HTMLResponse)
 def home():
