@@ -8,6 +8,6 @@ class Gender(str, Enum):
 
 
 class Employee(BaseModel):
-    id:int
-    name:str
+    id:Optional[int]
+    name:Optional[str] = None
     surname:Optional[str] = None
