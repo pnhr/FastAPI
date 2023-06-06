@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'psfastapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CB4ED365F5B749EB817FD2A31274858F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EB19114187C74DCCAC0D8892F67523AB }}
